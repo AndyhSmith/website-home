@@ -1,0 +1,19 @@
+.noStyleLink {
+	text-decoration: none;
+}
+
+.noStyleLink:link {
+	color: black;
+}
+
+.noStyleLink:visited {
+	color: black;
+}
+
+.noStyleLink:hover {
+	color: black;
+}
+
+.noStyleLink:active {
+	color: red;
+}

@@ -1,0 +1,195 @@
+body {
+	background-color: white;
+	margin: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		margin: 0px;
+	}
+}
+
+p {
+	margin: 0px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.content {
+	padding: 15px;
+	margin: auto;
+	margin-top: 0px;
+	max-width: 800px;
+}
+
+
+
+
+
+.footer {
+	text-align: center;
+}
+
+#introduction {
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+}
+
+#externalLinks {
+	text-align: center;
+	font-size: 40px;
+	
+	position: fixed;
+	left:1px;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 50px;
+	float: right;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 53px;
+	height: 100%;
+	background-color: #314F94;
+	box-shadow: 4px 0px #6B87C8;
+	z-index: -1;
+}
+
+#linkYoutube {
+	color: white;
+}
+
+#linkYoutube:hover {
+	color: red;
+	transition: color 0.2s ease;
+}
+
+#linkTwitter {
+	color: white;
+}
+
+#linkTwitter:hover {
+	color: #1DA1F2;
+	transition: color 0.2s ease;
+}
+
+#linkLinkedin {
+	color: white;
+}
+
+#linkLinkedin:hover {
+	color: #2867B2;
+	transition: color 0.2s ease;
+}
+
+#linkGithub {
+	color: white;
+}
+
+#linkGithub:hover {
+	color: #606060;
+	transition: color 0.2s ease;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#externalLinks {
+		position: relative;
+		max-width: 100%;
+		float: none;
+		color: black;
+		margin-top: 30px;	
+		margin-bottom: -50px;	
+	}
+	#myFace {
+		position: fixed;
+		left: -100px;
+		margin-top: 7px;
+		margin-right: 8px;
+		
+	}
+	#sidebar {
+		width: 0px;
+	}
+
+	#linkGithub {
+		color: black;
+		padding: 10px;
+	}
+
+	#linkTwitter {
+		color: black;
+		padding: 10px;
+	}
+
+	#linkLinkedin {
+		color: black;
+		padding: 10px;
+	}
+
+	#linkYoutube {
+		color: black;
+		padding: 10px;
+	}
+	
+}
+
+
+
+#mandelbrotPhoto {
+	background-image: url("/img/proj/projectMandelbrotSquare.jpg");
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 15px;
+}
+
+#bugsPhoto {
+	background-image: url("/img/proj/bugsPhoto.jpg");
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 15px;
+}
+
+#minecraftPhoto {
+	background-image: url("/img/proj/minecraft.jpg");
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 15px;
+}
+
+#myFace {
+	background-image: url("../img/opt/2019_colorrun_opt.jpg");
+	height: 40px;
+	width: 40px;
+	margin-left: 5px;
+	float: center;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	border-radius: 50%;
+	box-shadow: 0px 0px 1px 1px #6B87C8;
+}
+
+#myFace:hover {
+	box-shadow: 0px 0px 1px 2px #6B87C8;
+}
+
+
+
+#easyLinkContents{
+	float: none;
+}
+

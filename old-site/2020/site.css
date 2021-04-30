@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body
+{
+    margin: 0px;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    background-color: #252525;
+    
+    background-image: url("./res/background1_min2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    padding-top: 10px;
+    margin: 0px;
+    color: #5DD2B3;
+}
+
+h2:hover {
+    color: white;
+}
+
+
+
+
+#content {
+    /* background-color: pink; */
+    width: 100%;
+    margin-left: 0%;
+}
+
+
+  
+
+#content-header {
+    height: 300px;
+    width: 100%;
+    background-color: rgba(50,50,50,.5);
+    color: white;
+}
+
+#content-fill-bar {
+    height: 5px;
+    width: 100%;
+    background-color: #5DD2B3;
+}
+
+#blank-bar {
+    height: 100px;
+    width: 100%;
+}
+
+#content-nav {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-color: #363636;
+}
+
+#nav-container {
+    width: 100%;
+    background-color:pink;
+    left: 50%;
+    /* width: 600px; */
+    /* transform: translate(-50%, 0); */
+}
+
+.nav-link {
+    height: 30px;
+    max-height: 50px;
+    width: calc(100% - 30px);
+    cursor: pointer;
+    font-weight: bold;
+    color: #B5B5B5;
+    background-color: #363636;
+    float: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.nav-link:hover {
+    background-color: #565656;
+}
+
+#nav5-link {
+    cursor: pointer;
+}
+
+#nav5-link:hover {
+    color: #5DD2B3;
+}
+
+.content-body {
+    min-height: 600px;
+    width: 100%;
+    background-color: #363636;
+    padding-top: 0px;
+    color: white;
+}
+
+#content-footer {
+    padding-top: 15px;
+    height: 30px;
+    width: 100%;
+    color: #B5B5B5;
+    background-color: #252525;
+}
+
+/*##########################
+    LINKS
+##########################*/
+a:link {
+    /* color:black; */
+    text-decoration: none;
+}
+  
+a:visited {
+    /* color: black; */
+    text-decoration: none;
+}
+  
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/*##########################
+    N A V
+##########################*/
+
+#nav1 {
+    display: block;
+    background-color: #363636;
+}
+
+#nav2 {
+    display: none;
+    background-color: #363636;
+}
+
+#nav3 {
+    display: none;
+    background-color: #363636;
+}
+
+
+/*##########################################
+    P R O J E C T   S E C T I O N
+##########################################*/
+
+.project-container {
+    /* background-color: pink; */
+    width: calc(100% -20px);
+    height: calc(220px + 30vw);
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-img-container {
+    /* background-color: red; */
+    float: left;
+    width: 100%;
+    height: 30vw;
+    cursor: pointer;
+}
+.project-text-container{
+    position: relative;
+    /* background-color: orange; */
+    height: 180px;
+    width: 95%;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.project-title-container {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+.project-tag-container{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: yellow; */
+    height: 35px;
+    
+    padding-left: 5px;
+    width: calc(100% - 5px);
+}
+
+.project-tag {
+    cursor: pointer;
+    font-size: 14px;
+    position: inline;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    /* text-shadow: 1px 1px 2px #252525; */
+    background-color: #5DD2B3;
+    height: 15px;
+    float: left;
+}
+
+.project-data-container{
+    /* background-color: green; */
+    width: 100px;
+    float: left;
+    display: block;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%; /* try 20px 10px */ 
+}
+
+@media screen and (min-width: 769px) {
+    #content {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .project-container {
+        height: 185px;
+    }
+
+    .project-text-container{
+        width: calc(100% - 290px);
+        float: left;
+    }
+
+    .project-img-container {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    #nav-container {
+        position: absolute;
+        /* width: 100%; */
+        /* background-color:pink; */
+        left: 50%;
+        width: 600px;
+        transform: translate(-50%, 0);
+    }
+
+    .nav-link {
+        float: left;
+        width: 120px;
+    }
+
+    #content-nav {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #content {
+        width: 70%;
+        margin-left: 15%;
+    }
+}

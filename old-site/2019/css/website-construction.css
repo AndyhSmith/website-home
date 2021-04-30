@@ -1,0 +1,34 @@
+.website-construction {
+	position: absolute;
+	right: 0px;
+	top: 25%;
+	width: 30px;
+	height: 30px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 0px solid black;
+	Background-color: #fcdf03;
+	font-size: 13px;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.website-construction:after {
+	content: '!';
+}
+
+.website-construction:hover {
+	transform: rotate(-90deg);
+	right:-85px;
+	width: 200px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 0px solid black;
+	border-right: 1px solid black;
+}
+
+.website-construction:hover:after {
+	content: 'Website Under Construction';
+}

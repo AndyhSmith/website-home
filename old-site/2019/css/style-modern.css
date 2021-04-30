@@ -1,0 +1,134 @@
+body {
+	font-family: "Open Sans"; 
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	letter-spacing: .5rem;
+	text-transform: uppercase;
+	color: rgb(102, 102, 102);
+	line-height: 50px;
+}
+
+.sub-h1 {
+	font-size: 20px;
+	font-weight: 5;
+	line-height: 45px;
+}
+
+#sub-h1-id {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .5rem;
+	text-transform: uppercase;
+	color: rgb(102, 102, 102);
+	font-size: 20px;
+	font-weight: 5;
+	line-height: -20px;
+	margin-top: -30px;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(102, 102, 102);
+	text-transform: uppercase;
+	white-space: normal;
+	color: #405DA2;
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(102, 102, 102);
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	line-height: -20px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+
+
+li {
+	margin: 0px;
+	line-height: 20px;
+	display: block;
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+	border-left: 3px solid #526Fb3;
+	border-left-width: 0px;
+}
+
+li:hover {
+  Background-color: rgb(240, 240, 240);
+  border-left-width: 3px;
+ 
+  -webkit-transition: background-color 0.3s ease, border-left-width 0.3s ease;
+  -moz-transition: border-right-width 0.3s ease, background-color 0.3s ease;
+  -o-transition: border-left-width 0.3s ease, background-color 0.3s ease;
+  -ms-transition: border-left-width 0.3s ease, background-color 0.3s ease;
+  transition: border-left-width 0.3s ease, background-color 0.3s ease;
+	
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.parallelogram {
+	float: left;
+      width: 24%;
+	  margin-right: 1%;
+      height: 10px;
+      transform: skew(-20deg);
+}
+
+/*
+.color-primary-0 { color: #405DA2 }	
+.color-primary-1 { color: #6B87C8 }
+.color-primary-2 { color: #526FB3 }
+.color-primary-3 { color: #314F94 }
+.color-primary-4 { color: #223F81 } */
+
+
+#parallelogram1 {
+	background: #6B87C8;
+}
+
+#parallelogram2 {
+	background: #526Fb3;
+}
+
+#parallelogram3 {
+	background: #314F94;
+}
+
+#parallelogram4 {
+	background: #223F81;
+}
+
+
+
+
+

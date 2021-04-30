@@ -1,0 +1,68 @@
+details {
+	/*border: 1px solid #AAAAAA;*/
+	padding: 10px 10px 0px;
+	margin-left: -9px;
+	margin-right: -10px;
+	
+}
+
+
+
+summary {
+	font-weight: bold;
+	margin: -10px -10px 0px;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	
+}
+
+
+details[open] {
+	padding: 10px;
+	Background: rgb(240, 240, 240, 1);
+	Border-left: solid 4px #408989;
+}
+
+.inner-details[open] {
+	padding: 10px;
+	Background: rgb(230, 230, 230, 1);
+	Border-left: solid 3px #408989;
+}
+
+.inner-inner-details[open] {
+	padding: 10px;
+	Background: rgb(220, 220, 220, 1);
+	Border-left: solid 3px #408989;
+}
+
+details[open] summary {
+	margin-bottom: 10px;
+	/* Background: white; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
