@@ -116,6 +116,16 @@ data = {
             tags: ["unfinished"],
             mobile: false,
             desktop: true
+        },
+        {
+            title: "Name Generator",
+            desc: "Procedurally generates hundreds of unique character names instantly.",
+            link: "https://ideas.andyhsmith.com/name-generator",
+            linkText: "Visit Site",
+            img: "res/name/name3840x2160.png",
+            tags: ["tools"],
+            mobile: true,
+            desktop: true
         }
     ]
 }
