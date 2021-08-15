@@ -3,6 +3,48 @@ M.AutoInit();
 data = {
     p: [
         {
+            title: "Bug Swarm",
+            desc: "Control a swarm of bugs.",
+            link: "https://bugs.andyhsmith.com",
+            linkText: "Visit Site",
+            img: "res/bugs/bugs400x225.png",
+            tags: ["simulation"],
+            mobile: true,
+            desktop: true,
+            color: "black"
+        },
+        {
+            title: "World Gen",
+            desc: "Scroll through a procedurally generated map.",
+            link: "https://ideas.andyhsmith.com/map",
+            linkText: "Visit Site",
+            img: "res/map/map400x225.png",
+            tags: ["featured", "artsy"],
+            color: "white",
+            mobile: true,
+            desktop: true
+        },
+        {
+            title: "Name Generator",
+            desc: "Procedurally generates hundreds of unique names instantly.",
+            link: "https://ideas.andyhsmith.com/name-generator",
+            linkText: "Visit Site",
+            img: "res/name/name400x225.png",
+            tags: ["tools"],
+            mobile: true,
+            desktop: true
+        },
+        {
+            title: "Sierpinski's Triangle",
+            desc: "Recursively draw the Sierpinski Triangle fractal.",
+            link: "https://fractals.andyhsmith.com",
+            linkText: "Visit Site",
+            img: "res/sierpinski/sierpinski400x225.png",
+            tags: ["artsy", "simulation"],
+            mobile: true,
+            desktop: true
+        },
+        {
             title: "MenuSmith",
             dontShowTitle: true,
             desc: "MenuSmith suggests recipes you can cook using the ingredients in your pantry.",
@@ -23,17 +65,7 @@ data = {
             mobile: true,
             desktop: true
         },
-        {
-            title: "Bug Swarm",
-            desc: "Control a swarm of bugs.",
-            link: "https://bugs.andyhsmith.com",
-            linkText: "Visit Site",
-            img: "res/bugs/bugs400x225.png",
-            tags: ["simulation"],
-            mobile: true,
-            desktop: true,
-            color: "black"
-        },
+        
         {
             title: "3D Wireframe",
             desc: "A custom 3D wireframe rendering using no external libraries.",
@@ -54,16 +86,7 @@ data = {
             mobile: true,
             desktop: true
         },
-        {
-            title: "Sierpinski's Triangle",
-            desc: "Recursively draw the Sierpinski Triangle fractal.",
-            link: "https://fractals.andyhsmith.com",
-            linkText: "Visit Site",
-            img: "res/sierpinski/sierpinski400x225.png",
-            tags: ["artsy", "simulation"],
-            mobile: true,
-            desktop: true
-        },
+        
         {
             title: "Random TD",
             desc: "A tower defense game that is different every time you play.",
@@ -92,13 +115,13 @@ data = {
             linkText: "Visit YouTube",
             dontShowTitle: true,
             img: "res/neurak/neurak2-2560x1440.png",
-            tags: ["featured", "artsy"],
+            tags: ["artsy"],
             mobile: true,
             desktop: true
         },
         {
-            title: "A.I. RPS",
-            desc: "A.I. Rock Paper Scissors. A game that tries to learn from your choices.",
+            title: "Rock Paper Scissors",
+            desc: "A game that tries to learn from your choices.",
             link: "https://rps.andyhsmith.com",
             linkText: "Play Game",
             img: "res/rps/rps400x225.png",
@@ -118,16 +141,7 @@ data = {
             mobile: false,
             desktop: true
         },
-        {
-            title: "Name Generator",
-            desc: "Procedurally generates hundreds of unique character names instantly.",
-            link: "https://ideas.andyhsmith.com/name-generator",
-            linkText: "Visit Site",
-            img: "res/name/name400x225.png",
-            tags: ["tools"],
-            mobile: true,
-            desktop: true
-        },
+        
         {
             title: "Translator",
             desc: "Read a book that replaces english words with words from a language you are learning.",
@@ -139,17 +153,7 @@ data = {
             mobile: true,
             desktop: true
         },
-        {
-            title: "Map Scroll",
-            desc: "Scroll efficiently over a very large map.",
-            link: "https://ideas.andyhsmith.com/map",
-            linkText: "Visit Site",
-            img: "res/white400x225.png",
-            tags: ["unfinished"],
-            color: "black",
-            mobile: true,
-            desktop: false
-        },
+        
     ]
 }
 
