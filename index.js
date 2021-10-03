@@ -25,6 +25,17 @@ data = {
             desktop: true
         },
         {
+            title: "Tree Simulator",
+            desc: "Simulate a tree..",
+            link: "https://ideas.andyhsmith.com/stickman",
+            linkText: "Visit Site",
+            img: "res/treesim/treeSim400x225.png",
+            tags: ["featured", "artsy", "simulation"],
+            color: "white",
+            mobile: true,
+            desktop: true
+        },
+        {
             title: "Name Generator",
             desc: "Procedurally generates hundreds of unique names instantly.",
             link: "https://ideas.andyhsmith.com/name-generator",
