@@ -14,19 +14,19 @@ data = {
             color: "black"
         },
         {
-            title: "World Gen",
-            desc: "Scroll through a procedurally generated map.",
-            link: "https://ideas.andyhsmith.com/map",
+            title: "MenuSmith",
+            dontShowTitle: true,
+            desc: "MenuSmith suggests recipes you can cook using the ingredients in your pantry.",
+            link: "https://menusmith.com",
             linkText: "Visit Site",
-            img: "res/map/map400x225.png",
-            tags: ["featured", "artsy"],
-            color: "white",
+            img: "res/menusmith/menusmith400x225.png",
+            tags: ["featured", "tools"],
             mobile: true,
             desktop: true
         },
         {
             title: "Tree Simulator",
-            desc: "Simulate a tree..",
+            desc: "Simulate a tree.",
             link: "https://ideas.andyhsmith.com/stickman",
             linkText: "Visit Site",
             img: "res/treesim/treeSim400x225.png",
@@ -35,6 +35,18 @@ data = {
             mobile: true,
             desktop: true
         },
+        {
+            title: "World Gen",
+            desc: "Scroll through a procedurally generated map.",
+            link: "https://ideas.andyhsmith.com/map",
+            linkText: "Visit Site",
+            img: "res/map/map400x225.png",
+            tags: ["featured", "artsy", "simulation"],
+            color: "white",
+            mobile: true,
+            desktop: true
+        },
+        
         {
             title: "Name Generator",
             desc: "Procedurally generates hundreds of unique names instantly.",
@@ -55,17 +67,7 @@ data = {
             mobile: true,
             desktop: true
         },
-        {
-            title: "MenuSmith",
-            dontShowTitle: true,
-            desc: "MenuSmith suggests recipes you can cook using the ingredients in your pantry.",
-            link: "https://menusmith.com",
-            linkText: "Visit Site",
-            img: "res/menusmith/menusmith400x225.png",
-            tags: ["featured", "tools"],
-            mobile: true,
-            desktop: true
-        },
+        
         {
             title: "Mandelbrot Set",
             desc: "A JavaScript Mandelbrot Set explorer and animator.",
