@@ -37,15 +37,21 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+       
+    <link type="text/css" rel="stylesheet" href="leaves2.css?v=1.2"></link>
     <link type="text/css" rel="stylesheet" href="index.css?v=1.2"></link>
 </head>
 
-<body>
-    <!-- <div id="device-icons">
-        <span class="device-icons-item"><i class="fas fa-desktop"></i> Works on Computer<br><span>
-        <i class="fas fa-mobile"></i> Works on Mobile
-    </div> -->
+<body onload="onload()">
+    <div id="stats">
+        
+        FPS: <span id="fps">60</span> | 
+        Date: <span id="date">Loading</span>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <canvas id="canvas2"></canvas>
+     
     
     <p style="color:#f9f9f9;font-family: 'Great Vibes', cursive; font-size:70px">Andy Smith</p>
     
@@ -112,5 +118,6 @@
 
     <p style="color:white;">© 2021, Andy Smith. All Rights Reserved</p>
     <script type="text/javascript" src="index.js?v=1.2"></script>
+    <script type="text/javascript" src="leaves.js?v=1.2"></script>
 </body>
 </html>
