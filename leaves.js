@@ -131,7 +131,16 @@ dataBinary = {
     "r": false,
 }
 
-var data_options = [dataSpring, dataLeaf, dataFall, dataSnow, dataPetal, dataBinary]
+dataPumpkin = {
+    "name": "Halloween",
+    "num": 18,
+    "path": 'p/pumpkin/p',
+    "s": .5,
+    "w": 0,
+    "r": true,
+}
+
+var data_options = [dataSpring, dataLeaf, dataFall, dataSnow, dataPetal, dataBinary, dataPumpkin]
 
 
 
@@ -168,6 +177,16 @@ function onload() {
     if (month == 2 && day == 14) {
         active_data = dataPetal
         season = "Valentine's Day"
+    }
+
+    if (month == 10 && day == 31) {
+        active_data = dataPumpkin
+        season = active_data.name
+    }
+
+    if (Math.random() < .2) {
+        active_data = data_options[Math.floor(Math.random()*data_options.length)];
+        season = "Random Selection:<br>" + active_data.name
     }
 
     // active_data = dataBinary

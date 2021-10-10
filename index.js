@@ -217,6 +217,7 @@ function updateDOM() {
         }
         document.getElementById("featured-projects-h").style.display = "block"
         document.getElementById("featured-projects").innerHTML = content
+
     }
     
     document.getElementById("tools-projects").innerHTML = ""

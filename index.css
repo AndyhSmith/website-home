@@ -72,19 +72,30 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
-    width: 100px;
-    height: 80px;
+    /* width: 100px; */
+    height: 25px;
+    margin-left: 30px;
     font-size: 15px;
     vertical-align: top;
     transition-duration: 100ms;
-    transition-property: font-size;
+    transition-property: font-size, border-bottom;
     transition-timing-function: ease-out;
     cursor: pointer;
+    border-bottom: 0px white solid;
+    /* border-top: 2px rgba(0,0,0,0) solid; */
+    text-align: bottom;
 }
 
 .custom-button:hover {
     font-size: 18px;
+    border-bottom: 2px white solid;
+    /* border-top: 0px white solid; */
 }
+
+.align-bot {
+
+}
+
 
 .noStyleLink {
     font-size: 25px;
@@ -152,6 +163,10 @@ body {
     top: 0px;
     left: 0px;
     z-index: -1;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 #canvas2 {
@@ -160,7 +175,11 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 2
+    z-index: 2;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 
