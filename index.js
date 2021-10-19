@@ -91,11 +91,11 @@ data = {
         },
         {
             title: "Swarm Survivor",
-            desc: "Survive waves of StarCraft Zerglings. How long can you last?",
+            desc: "Survive waves of alien enemies from the game StarCraft. How long can you last?",
             link: "https://unit.andyhsmith.com",
             linkText: "Play Game",
             img: "res/unit/unit384x216.png",
-            tags: ["unfinished"],
+            tags: ["game"],
             mobile: true,
             desktop: true
         },
