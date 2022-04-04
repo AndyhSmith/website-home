@@ -1,0 +1,287 @@
+<html>
+<head>
+<style>
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.image {
+    position: relative;
+    transition: .5s ease;
+    width: 20%;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.image:hover {
+    opacity: 1;
+
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    z-index: 2 !important;
+}
+
+#largeView {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+#backdrop {
+    background-color: #000;
+    opacity: .8;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#actualImage {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    max-width: 500px;
+    -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
+
+#actualImage:hover {
+    opacity: 0;
+    transition: .3s ease;
+}
+
+#actualImage2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    max-width: 500px;
+    -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
+
+
+#rightHandle {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    width: 50%;
+    height: 20%;
+    background-color:#333;
+    -webkit-transform: translate(0%, -50%);
+     transform: translate(0%, -50%);
+     cursor: pointer;
+     transition: .5s ease;
+     opacity: .8;
+}
+
+#rightHandle:hover {
+    height: 25%;
+    max-height: 500px;
+}
+
+#triangle-right {
+    position: fixed;
+    top: 50%;
+    right: calc(10% - 25px);
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 20px solid #DDD;
+      border-bottom: 50px solid transparent;
+      -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     cursor: pointer;
+    }
+
+#leftHandle {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    width: 50%;
+    height: 20%;
+    background-color:#333;
+    -webkit-transform: translate(0%, -50%);
+     transform: translate(0%, -50%);
+     cursor: pointer;
+     transition: .5s ease;
+     opacity: .8;
+}
+
+#leftHandle:hover {
+    height: 25%;
+    max-height: 500px;
+}
+
+#triangle-left {
+    position: fixed;
+    top: 50%;
+    left: calc(10% - 25px);
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 20px solid #DDD;
+      border-bottom: 50px solid transparent;
+      -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     cursor: pointer;
+    }
+
+#showOrig {
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    height: 50px;
+    width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+    background-color: #DDD;
+    transition: .1s ease;
+}
+
+#showOrig:hover {
+    background-color: #888;
+}
+#youtube {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    /* -webkit-transform: translate(-50%, 0%);
+     transform: translate(-50%, 0%); */
+     width: 200px;
+     cursor: pointer;
+     transition: .1s ease;
+     z-index: 4;
+}
+
+#youtube:hover {
+    opacity: .6;
+}
+
+</style>
+</head>
+<body>
+    <a  target="_blank" href="https://www.youtube.com/channel/UCCm2teozGdx2btWvO7zrevQ"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" id="youtube"></a>
+    <div id="largeView">
+        <div id="backdrop"  onclick="hide()"></div>
+        
+        <div id="rightHandle" onclick="next()"></div>
+        <div id="triangle-right" onclick="next()"></div>
+        <div id="leftHandle" onclick="previous()"></div>
+        <div id="triangle-left"  onclick="previous()"></div>
+
+        <div id="largeImage2"></div>
+        <div id="largeImage"></div>
+
+        
+        
+
+    </div>
+
+    
+    <div id="content"></div>
+
+    
+
+</body>
+
+<script>
+    let activeID = 0
+    function enlarge(id) {
+        activeID = id
+        let content = "<img src='img/" + images[id].u + "' id='actualImage'>"
+        document.getElementById("largeImage").innerHTML = content;
+
+        content = "<img src='img/" + ids[images[id].id] + "' id='actualImage2'>"
+        document.getElementById("largeImage2").innerHTML = content;
+        document.getElementById("largeView").style.display = "block"
+    }
+
+    function hide() {
+        document.getElementById("largeView").style.display = "none"
+    }
+
+    function next() {
+        let newID = activeID += 1
+        if (newID >= images.length) {
+            newID = 0
+        }
+        enlarge(newID)
+    }
+
+    function previous() {
+        let newID = activeID -= 1
+        if (newID == -1) {
+            newID = images.length - 1
+        }
+        enlarge(newID)
+    }
+
+
+    let ids = {
+        1: "Moon_Knight__Disney.png",
+        2: "The_Persistence_of_Memory__Salvador_Dali.png",
+        3: "Albuquerque_at_Night__advancedsolar.com.png"
+    }
+    let images = [
+        {u: "MoonKnightClaudeMonetFINAL.png", id:1},
+        {u: "MoonKnightDanielWallFINAL.png", id:1},
+        {u: "MoonKnightDisneyFINAL.png", id:1},
+        {u: "MoonKnightEdvardMunchFINAL.png", id:1},
+        {u: "MoonKnightGeorgeHoltonFINAL.png", id:1},
+        {u: "MoonKnightHokusaiFINAL.png", id:1},
+        {u: "MoonKnightJacksonPollockFINAL.png", id:1},
+        {u: "MoonKnightMattBeyrerFINAL.png", id:1},
+        {u: "MoonKnightPabloPicassoFINAL.png", id:1},
+        {u: "MoonKnightPeterMaxFINAL.png", id:1},
+        {u: "MoonKnightRaphaelFINAL.png", id:1},
+        {u: "MoonKnightVasilyKandinskyFINAL.png", id:1},
+
+        {u: "ThePersistenceofMemoryClaudeMonetFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryDanielWallFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryEdvardMunchFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryGeorgeHoltonFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryJacksonPollockFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryMattBeyrerFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryPeterMaxFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryRaphaelFINAL.png", id:2},
+        {u: "ThePersistenceofMemoryVasilyKandinskyFINAL.png", id:2},
+
+        {u: "AlbuquerqueatNightGeorgeHoltonOutput.png", id:3},
+        {u: "AlbuquerqueatNightPeterMaxOutput.png", id:3},
+        {u: "AlbuquerqueatNightQianXuanOutput.png", id:3},
+        {u: "AlbuquerqueatNightRaphaelOutput.png", id:3},
+    ]
+
+    let content = "";
+    for (let i = 0; i < images.length; i++) {
+        content += "<img class='image' onclick='enlarge(" + i + ")' src='img/" + images[i].u + "'>"
+    }
+
+
+    document.getElementById("content").innerHTML = content;
+    console.log("Hi")
+</script>
+</html>
