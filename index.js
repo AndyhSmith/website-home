@@ -15,7 +15,7 @@ data = {
         },
         {
             title: "DNN Style Transfer",
-            desc: "View a gallary of DNN style transfer images. Visit my Youtube for more.",
+            desc: "View a gallery of DNN style transfer images. Visit my Youtube for more.",
             link: "s/styletransfer/index.html",
             linkText: "Visit Site",
             img: "res/styletransfer400x225.png",
@@ -26,7 +26,7 @@ data = {
         },
         {
             title: "Jedi Fighter",
-            desc: "Use the ASWD keys to controll a small jedi.",
+            desc: "Use the ASWD keys to control a small Jedi Master.",
             link: "s/jedifighter/index.html",
             linkText: "Visit Site",
             img: "res/jedi_fighter400x225.png",
