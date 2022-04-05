@@ -3,12 +3,23 @@ M.AutoInit();
 data = {
     p: [
         {
+            title: "Android App",
+            desc: "Keep a balloon on the screen in this free Android app! See if you can unlock all of the balloons.",
+            link: "https://play.google.com/store/apps/details?id=com.andyhsmith.androidgame",
+            linkText: "Download App",
+            img: "res/keepitalive400x225.png",
+            tags: ["featured", "game"],
+            mobile: true,
+            desktop: false,
+            color: "white"
+        },
+        {
             title: "DNN Style Transfer",
             desc: "View a gallary of DNN style transfer images. Visit my Youtube for more.",
             link: "s/styletransfer/index.html",
             linkText: "Visit Site",
             img: "res/styletransfer400x225.png",
-            tags: ["featured"],
+            tags: ["featured", "artsy"],
             mobile: true,
             desktop: true,
             color: "white"
