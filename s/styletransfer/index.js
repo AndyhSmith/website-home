@@ -35,8 +35,18 @@ let activeID = 0
         2: "The_Persistence_of_Memory__Salvador_Dali.png",
         3: "Albuquerque_at_Night__advancedsolar.com.png",
         4: "Mr_Incredible__Pixar.png",
+        5: "Wanderer_above_the_sea_of_fog__Caspar_David_Friedrich.png",
     }
     let images = [
+        {u: "WandererabovetheseaoffogAndySmith_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogHarelBoren_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogHenriMatisse_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogIrishMonastery_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogJeanMetzinger_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogKre8_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogPeterMax_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogSesshuToyo_FINAL.png", id:5},
+        {u: "WandererabovetheseaoffogVanGogh_FINAL.png", id:5},
 
         {u: "MrIncrediblePabloPicassoFINAL.png", id:4},
         {u: "MrIncrediblePeterMaxFINAL.png", id:4},
