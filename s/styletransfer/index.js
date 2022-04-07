@@ -36,8 +36,25 @@ let activeID = 0
         3: "Albuquerque_at_Night__advancedsolar.com.png",
         4: "Mr_Incredible__Pixar.png",
         5: "Wanderer_above_the_sea_of_fog__Caspar_David_Friedrich.png",
+        6: "Howls_Moving_Castle_Calcifer,__Studio_Ghibli.png",
+        7: "Howls_Moving_Castle,__Studio_Ghibli.png",
+        8: "Howls_Moving_Castle,_Turnip_Head__Studio_Ghibli.png",
     }
     let images = [
+        {u: "Howl_sMovingCastleCalcifer,Hokusai_FINAL.png", id:6},
+        {u: "Howl_sMovingCastleCalcifer,ChenHongshou_FINAL.png", id:6},
+        {u: "Howl_sMovingCastleCalcifer,VanGogh_FINAL.png", id:6},
+        {u: "Howl_sMovingCastleCalcifer,VasilyKandinsky_FINAL.png", id:6},
+
+        {u: "Howl_sMovingCastle,TurnipHeadClaudeMonet_FINAL.png", id:8},
+        {u: "Howl_sMovingCastle,TurnipHeadDisney_FINAL.png", id:8},
+        {u: "Howl_sMovingCastle,TurnipHeadPeterMax_FINAL.png", id:8},
+        {u: "Howl_sMovingCastle,TurnipHeadRaphael_FINAL.png", id:8},
+
+        {u: "Howl_sMovingCastle,IrishMonastery_FINAL.png", id:7},
+        {u: "Howl_sMovingCastle,PeterMax_FINAL.png", id:7},
+        {u: "Howl_sMovingCastle,RobertDelaunay_FINAL.png", id:7},
+
         {u: "WandererabovetheseaoffogAndySmith_FINAL.png", id:5},
         {u: "WandererabovetheseaoffogHarelBoren_FINAL.png", id:5},
         {u: "WandererabovetheseaoffogHenriMatisse_FINAL.png", id:5},
