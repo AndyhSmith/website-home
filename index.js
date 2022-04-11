@@ -14,6 +14,17 @@ data = {
             color: "white"
         },
         {
+            title: "Multiplayer Sockets",
+            desc: "Work in progress. Connect multiple devices to this site to control Among Us characters and chat.",
+            link: "/explore",
+            linkText: "Visit Site",
+            img: "res/amongussockets400x225.png",
+            tags: ["featured", "game", "unfinished"],
+            mobile: true,
+            desktop: true,
+            color: "white"
+        },
+        {
             title: "DNN Style Transfer",
             desc: "View a gallery of DNN style transfer images. Visit my Youtube for more.",
             link: "s/styletransfer/index.html",
